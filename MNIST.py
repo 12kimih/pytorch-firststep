@@ -7,7 +7,7 @@ from torch.utils.data import DataLoader
 
 batch_size = 256
 learning_rate = 0.0002
-num_epoch = 10
+num_epoch = 100
 
 mnist_train = datasets.MNIST("MNIST/", train=True, transform=transforms.ToTensor(), download=True)
 mnist_test = datasets.MNIST("MNIST/", train=False, transform=transforms.ToTensor(), download=True)
@@ -69,7 +69,7 @@ with torch.no_grad():
         y = label.to(device)
 
         output = model.forward(x)
-        (_, output_index) = torch.max(output, 1)
+        _, output_index = torch.max(output, 1)
 
         total += label.size(0)
         correct += (output_index == y).sum().float()

@@ -155,6 +155,7 @@ ipython_config.py
 # <<< JupyterNotebooks.gitignore <<<
 
 # >>> Local >>>
+test.py
 .vscode
 MNIST
 # <<< Local <<<
