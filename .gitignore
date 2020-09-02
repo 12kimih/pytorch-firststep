@@ -1,4 +1,4 @@
-# >>> Python.gitignore >>>
+# >>> Python >>>
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -137,9 +137,9 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
-# <<< Python.gitignore <<<
+# <<< Python <<<
 
-# >>> JupyterNotebooks.gitignore >>>
+# >>> JupyterNotebooks >>>
 # gitignore template for Jupyter Notebooks
 # website: http://jupyter.org/
 
@@ -152,10 +152,10 @@ ipython_config.py
 
 # Remove previous ipynb_checkpoints
 #   git rm -r .ipynb_checkpoints/
-# <<< JupyterNotebooks.gitignore <<<
+# <<< JupyterNotebooks <<<
 
-# >>> Local >>>
+# >>> Project >>>
 .vscode
 logs
 MNIST
-# <<< Local <<<
+# <<< Project <<<
