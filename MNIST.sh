@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SBATCH -J MNIST
-#SBATCH -o MNIST_%j.log
+#SBATCH -o logs/MNIST_%j.log
 #SBATCH -p x_corp
 #SBATCH -t 11-00:00:00
 #SBATCH -N 1
@@ -25,7 +25,7 @@ unset __conda_setup
 
 # Activate conda environment
 conda activate pytorch
+conda info
 
 # Execute python script
-which python3
-python3 MNIST.py --cuda
+python3 MNIST.py
